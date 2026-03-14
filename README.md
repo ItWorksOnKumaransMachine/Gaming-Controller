@@ -50,22 +50,19 @@ Both devices must be connected to the **same WiFi or LAN network**.
 # System Architecture
 
 ```
-                AETHERGRID CLUSTER
-
-          ┌──────────────────────────┐
-          │        LAPTOP            │
-          │      CONTROL NODE        │
-          │                          │
-          │ Task Scheduler           │
-          │ Dataset Coordinator      │
-          │ Result Aggregator        │
-          └──────────────┬───────────┘
-                         │
-                    Local Network
-                         │
-                 ┌───────┴────────┐
-              
-
+        AETHERGRID CLUSTER
+   ┌──────────────────────────┐
+   │        LAPTOP            │
+   │      CONTROL NODE        │
+   │                          │
+   │ Task Scheduler           │
+   │ Dataset Coordinator      │
+   │ Result Aggregator        │
+   └──────────────┬───────────┘
+                  │
+            Local Network
+                  │
+          ┌───────┴────────┐
           ┌───────────────┐
           │  RASPBERRY PI │
           │  WORKER NODE  │
